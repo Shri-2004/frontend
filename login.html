@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .container {
+            background-image: url(gojo.jpg);
+            filter: blur(8px);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .body {
+            border: 1px solid gray;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+
+        .email {
+            opacity: 0.5;
+            padding: 8px;
+            margin: 6px;
+            font-weight: bold;
+            color: black;
+
+        }
+
+        ::placeholder {
+            text-align: center;
+        }
+
+        .password {
+            opacity: 0.5;
+            padding: 8px;
+            margin: 6px;
+            font-weight: bold;
+
+        }
+
+
+        .checkbox {
+            text-align: left;
+            margin-bottom: 6px;
+
+        }
+
+        .forgot {
+            padding: 8px;
+            margin: 6px;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        button {
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+    </div>
+    <div class="body">
+        <h1>Login</h1>
+        <div id="body">
+            <input class="email" type="email"required placeholder="email"><br>
+            <input class="password" type="password" required placeholder="password"> <br>
+
+
+        </div>
+        <div class="checkbox">
+            <input class="checkbox" type="checkbox" required>Remember me
+        </div>
+        <div>
+            <button>Login</button>
+        </div>
+        <div class="forgot">
+            <a href="">forgot password?</a>
+        </div>
+        <div class="sign">
+            Don't have an account?<a href="">sign up</a>
+        </div>
+    </div>
+</body>
+
+</html>
